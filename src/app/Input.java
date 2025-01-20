@@ -1,25 +1,28 @@
 package app;
 
-public class AppController {
+public class Input {
     static String clientName;
     static String product;
     static double price;
     static String address;
     final static String CURRENCY = "$";
     static int count;
+
     public static void getOutput() {
-        System.out.println("Order №" + count + " Name of Client: "  + clientName +
+        System.out.println("Order №" + count + " Name of Client: " + clientName +
                 ", \nProduct: " + product + ", \nPrice of product: " + CURRENCY + price +
                 ", \nAddress:  " + address);
     }
-    public static void inputViktoria(){
+
+    public static void inputViktoria() {
         count++;
         clientName = "Viktoria";
         product = "fridge";
         price = 1223.74;
         address = "Sun street, 29";
     }
-    public  static void inputDen(){
+
+    public static void inputDen() {
         count++;
         clientName = "Den";
         product = "TV";

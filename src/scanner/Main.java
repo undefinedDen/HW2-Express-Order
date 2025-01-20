@@ -1,8 +1,8 @@
-package sc;
+package scanner;
 
 import java.util.Scanner;
 
-public class GetScanner {
+public class Main {
     static String name;
     static String product;
     static String address;
@@ -10,8 +10,9 @@ public class GetScanner {
     final static String CURRENCY = "EUR";
 
     public static void main(String[] args) {
-        GetScanner get = new GetScanner();
+        Main get = new Main();
         Scanner scanner = new Scanner(System.in);
+
 
         get.getInfo();
         System.out.print("Client: ");
@@ -47,7 +48,7 @@ public class GetScanner {
                 ----------------------------------------------------------------------------- \
                 
                 ORDER\s
-                Enter your name or "stop" for the end of program\n""");
+                Input your name or "stop" for the end of program\n""");
 
     }
 }
